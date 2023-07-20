@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styled Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 20px;
+        }
+
+        div {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        strong {
+            color: #007bff;
+        }
+
+        /* Style for nested data */
+        .nested-data {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        {% for key, dict in result.items() %}
+            <strong>{{ key }}:</strong><br>
+            <div class="nested-data">
+                {% for key2, dict2 in dict.items() %}
+                    {{ key2 }}: {{ dict2 }}<br>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

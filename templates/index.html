@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Donor Society</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7; /* Light gray background */
+        }
+
+        /* Header styles */
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            color: #333; /* Dark gray color for the heading */
+            font-size: 40px; /* Larger font size for a bold look */
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: #333; /* Dark gray color for the link */
+            font-weight: bold;
+        }
+
+        /* Image and form container styles */
+        .container-fluid {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Adjust the height as needed */
+            padding: 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container {
+            flex: 1;
+            max-width: 400px;
+            margin-left: 20px; /* Add some space between the image and form container */
+            background-color: #fff;
+            padding: 30px; /* Increased padding for more space */
+            border-radius: 10px; /* Slightly rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+        }
+
+        /* Form input styles */
+        h2 {
+            color: #333; /* Dark gray color for the subheadings */
+            font-size: 24px; /* Adjusted font size for better balance */
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd; /* Light gray border for input fields */
+            border-radius: 6px; /* Slightly rounded borders */
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #444; /* Dark gray text color */
+            background-color: #f5f5f5; /* Off-white background color */
+        }
+
+        input[type="submit"] {
+            background-color: #007bff; /* Bright blue color for the submit button */
+            color: #fff; /* White text color */
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px; /* Slightly rounded borders */
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Darker shade of blue on hover */
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideInRight {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(0); }
+        }
+
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            visibility: visible !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Blood Donor Society</h1>
+        <a href="search">Search Blood</a>
+    </div>
+
+    <div class="container-fluid">
+        <div class="image-container animated fadeInLeft">
+            <img src="static/images/plot.png" class="img-fluid" alt="Blood Donor" style="max-width: 100%;">
+        </div>
+
+        <div class="form-container animated slideInRight">
+            <h1 class="text-center mb-4">Become a Blood Donor</h1>
+            <form method="POST">
+                <div class="form-group">
+                    <h2>Enter the required blood type</h2>
+                    <input type="text" name="blood_type" class="form-control" placeholder="Blood Type (e.g., A+, B-, O+)">
+                </div>
+                <div class="form-group">
+                    <h2>Enter the hospital</h2>
+                    <input type="text" name="hospital" class="form-control" placeholder="Hospital Name">
+                </div>
+                <div class="form-group">
+                    <h2>Enter your number</h2>
+                    <input type="text" name="number" class="form-control" placeholder="Your Contact Number">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.animated').addClass('fadeIn');
+        });
+    </script>
+</body>
+</html>
