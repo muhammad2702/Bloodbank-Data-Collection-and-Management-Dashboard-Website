@@ -11,9 +11,8 @@ To install the project, you will need to have Python 3 and the following Python 
 - Matplotlib
 Once you have installed the required packages, you can install the project by running the following command:
 <pre>
-  '''python 
 pip install -r requirements.txt
-'''
+
 </pre>
 
 
