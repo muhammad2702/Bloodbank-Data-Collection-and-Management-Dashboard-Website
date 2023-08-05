@@ -1,6 +1,6 @@
 
-# Blood Donor Society
-This project is a web application that allows users to register as blood donors and search for blood donors. The application uses a MySQL database to store the donor data.
+# Bloodbank Data Collection and Management Dashboard & Website
+This project is a web application that allows users to register as blood donors and search for blood donors and uses data analytics to keep users updated 
 
 ## Installation
 To install the project, you will need to have Python 3 and the following Python packages installed:
