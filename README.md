@@ -3,7 +3,7 @@
 This project is a web application that allows users to register as blood donors and search for blood donors and uses data analytics to keep users updated 
 
 ## Installation
-To install the project, you will need to have Python 3 and the following Python packages installed:
+To install the project, you will need to have Python 3.8 or above and the following Python packages installed:
 
 - Flask
 - Pandas
@@ -11,7 +11,7 @@ To install the project, you will need to have Python 3 and the following Python 
 - Matplotlib
 Once you have installed the required packages, you can install the project by running the following command:
 <pre>
-pip install -r requirements.txt
+pip install flask pandas numpy matplotlib
 
 </pre>
 
@@ -27,13 +27,12 @@ The application will be available at http://localhost:5000.
 
 The application has the following features:
 
+* The application displays a visualization of the blood donor data.
 * Users can register as blood donors and provide their contact information.
 * Users can search for blood donors by blood type and location.
-* The application displays a graph of the blood donor data.
 
 ## To-do
 
 The following are some of the things that I plan to add to the project in the future:
 
-* Allow users to update their contact information.
-* Send notifications to users when there is a need for blood.
+* Use exploratory data analysis on the data
